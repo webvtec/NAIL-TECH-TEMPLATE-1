@@ -47,19 +47,19 @@
 
 <style>
   :root {
-    --rose:    #C8446A;
-    --rose2:   #9E2F52;
-    --blush:   #F2C4CE;
-    --blush2:  #FAE8EE;
+    --rose:    #7B4FA6;
+    --rose2:   #5C3480;
+    --blush:   #D9C2F0;
+    --blush2:  #EFE5FA;
     --gold:    #C9956C;
     --gold2:   #A87550;
-    --cream:   #FDF8F5;
-    --dark:    #1C1016;
-    --dark2:   #2A1A20;
-    --muted:   #8A6070;
-    --line:    rgba(200,68,106,0.15);
+    --cream:   #F9F6FD;
+    --dark:    #120D1C;
+    --dark2:   #1E1530;
+    --muted:   #7A6590;
+    --line:    rgba(123,79,166,0.15);
     --white:   #ffffff;
-    --text:    #3D1F2B;
+    --text:    #2A1A3D;
   }
 
   * { box-sizing: border-box; }
@@ -71,7 +71,7 @@
     background-color: var(--cream);
     color: var(--text);
     background-image:
-      radial-gradient(ellipse at 10% 0%, rgba(200,68,106,0.07) 0, transparent 55%),
+      radial-gradient(ellipse at 10% 0%, rgba(123,79,166,0.15) 0, transparent 55%),
       radial-gradient(ellipse at 90% 100%, rgba(201,149,108,0.06) 0, transparent 50%);
     background-attachment: fixed;
   }
@@ -86,7 +86,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    border-bottom: 1px solid rgba(200,68,106,0.4);
+    border-bottom: 1px solid rgba(123,79,166,0.15);
     box-shadow: 0 2px 20px rgba(0,0,0,0.35);
   }
 
@@ -98,7 +98,7 @@
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
-    background: linear-gradient(135deg, #F2C4CE 0%, #C9956C 45%, #C8446A 100%);
+    background: linear-gradient(135deg, #F2C4CE 0%, #C9956C 45%, #7B4FA6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -150,7 +150,7 @@
     height: 3px;
     background: repeating-linear-gradient(
       90deg,
-      #C8446A 0 18px, #F2C4CE 18px 28px, #C9956C 28px 46px, #F2C4CE 46px 56px
+      #7B4FA6 0 18px, #F2C4CE 18px 28px, #C9956C 28px 46px, #F2C4CE 46px 56px
     );
   }
 
@@ -168,7 +168,7 @@
     overflow-y: auto;
     box-sizing: border-box;
     z-index: 999;
-    border-right: 1px solid rgba(200,68,106,0.3);
+    border-right: 1px solid rgba(123,79,166,0.15);
     box-shadow: 6px 0 30px rgba(0,0,0,0.6);
   }
 
@@ -218,15 +218,15 @@
     transform-origin: center;
   }
 
-  .menu a:hover { color: var(--blush); background: rgba(200,68,106,0.07); }
+  .menu a:hover { color: var(--blush); background: rgba(123,79,166,0.15); }
   .menu a:hover::before { transform: scaleY(1); }
 
   .opening-hours {
     padding: 14px 18px;
-    border-top: 1px solid rgba(200,68,106,0.2);
-    border-bottom: 1px solid rgba(200,68,106,0.2);
+    border-top: 1px solid rgba(123,79,166,0.15);
+    border-bottom: 1px solid rgba(123,79,166,0.15);
     margin: 4px 0;
-    background: rgba(200,68,106,0.04);
+    background: rgba(123,79,166,0.15);
   }
 
   .opening-hours h3 {
@@ -264,7 +264,7 @@
 
   .separator-line {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(200,68,106,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(123,79,166,0.15), transparent);
     margin: 6px 18px;
   }
 
@@ -280,7 +280,7 @@
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
-    border: 1px solid rgba(200,68,106,0.5);
+    border: 1px solid rgba(123,79,166,0.15);
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -324,7 +324,7 @@
     margin-top: 80px;
     font-size: 30px;
     letter-spacing: 2px;
-    text-shadow: 0 2px 12px rgba(200,68,106,0.15);
+    text-shadow: 0 2px 12px rgba(123,79,166,0.15);
     position: relative;
     padding-bottom: 16px;
   }
@@ -374,7 +374,7 @@
   .gallery-grid img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(200,68,106,0.12), 0 0 0 1px rgba(200,68,106,0.08);
+    box-shadow: 0 4px 18px rgba(123,79,166,0.15), 0 0 0 1px rgba(123,79,166,0.15);
     height: 230px;
     object-fit: cover;
     transition: transform 0.25s, box-shadow 0.25s;
@@ -382,7 +382,7 @@
 
   .gallery-grid img:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 28px rgba(200,68,106,0.25);
+    box-shadow: 0 8px 28px rgba(123,79,166,0.15);
   }
 
   /* ===== BOOKING FORM ===== */
@@ -392,7 +392,7 @@
     background: var(--white);
     padding: 28px 24px 24px;
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(200,68,106,0.1), 0 0 0 1px rgba(200,68,106,0.06);
+    box-shadow: 0 4px 30px rgba(123,79,166,0.15), 0 0 0 1px rgba(123,79,166,0.15);
     border-top: 4px solid var(--rose);
     position: relative;
   }
@@ -413,7 +413,7 @@
     width: 100%;
     padding: 12px;
     margin-bottom: 14px;
-    border: 1px solid rgba(200,68,106,0.2);
+    border: 1px solid rgba(123,79,166,0.15);
     border-radius: 8px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -426,7 +426,7 @@
   form input:focus, form select:focus {
     outline: none;
     border-color: var(--rose);
-    box-shadow: 0 0 0 3px rgba(200,68,106,0.12);
+    box-shadow: 0 0 0 3px rgba(123,79,166,0.15);
     background: #fff;
   }
 
@@ -442,12 +442,12 @@
     transition: all 0.2s;
     text-transform: uppercase;
     padding: 14px;
-    box-shadow: 0 4px 14px rgba(200,68,106,0.3);
+    box-shadow: 0 4px 14px rgba(123,79,166,0.15);
   }
 
   form button:hover {
     background: linear-gradient(135deg, var(--rose2) 0%, #7A2040 100%);
-    box-shadow: 0 6px 20px rgba(200,68,106,0.4);
+    box-shadow: 0 6px 20px rgba(123,79,166,0.15);
     transform: translateY(-1px);
   }
 
@@ -462,7 +462,7 @@
     font-size: 13px;
     color: var(--muted);
     line-height: 1.7;
-    box-shadow: 0 2px 12px rgba(200,68,106,0.08);
+    box-shadow: 0 2px 12px rgba(123,79,166,0.15);
   }
 
   /* ===== PRICE LIST ===== */
@@ -471,8 +471,8 @@
     border-radius: 14px;
     overflow: hidden;
     margin-bottom: 16px;
-    border: 1px solid rgba(200,68,106,0.12);
-    box-shadow: 0 4px 18px rgba(200,68,106,0.08);
+    border: 1px solid rgba(123,79,166,0.15);
+    box-shadow: 0 4px 18px rgba(123,79,166,0.15);
   }
 
   .price-card-header {
@@ -494,7 +494,7 @@
     display: flex;
     justify-content: space-between;
     padding: 9px 16px;
-    border-bottom: 1px solid rgba(200,68,106,0.07);
+    border-bottom: 1px solid rgba(123,79,166,0.15);
     font-size: 13px;
   }
 
@@ -524,13 +524,13 @@
     letter-spacing: 2px;
     transition: all 0.2s;
     text-decoration: none;
-    box-shadow: 0 4px 14px rgba(200,68,106,0.3);
+    box-shadow: 0 4px 14px rgba(123,79,166,0.15);
     text-transform: uppercase;
   }
 
   .book-now-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(200,68,106,0.4);
+    box-shadow: 0 6px 20px rgba(123,79,166,0.15);
   }
 
   /* ===== REVIEWS ===== */
@@ -539,7 +539,7 @@
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid rgba(200,68,106,0.2);
+    border: 1px solid rgba(123,79,166,0.15);
     background: var(--blush2);
     color: var(--text);
     font-family: 'Montserrat', sans-serif;
@@ -549,7 +549,7 @@
   textarea:focus {
     outline: none;
     border-color: var(--rose);
-    box-shadow: 0 0 0 3px rgba(200,68,106,0.12);
+    box-shadow: 0 0 0 3px rgba(123,79,166,0.15);
     background: #fff;
   }
 
@@ -575,13 +575,13 @@
     position: relative;
     padding: 20px;
     border-top: 4px solid var(--rose);
-    box-shadow: 0 12px 50px rgba(200,68,106,0.2);
+    box-shadow: 0 12px 50px rgba(123,79,166,0.15);
   }
 
   /* ===== CARD ITEM STYLES ===== */
   .cut-item, .addon-item {
     padding: 9px 12px;
-    border-bottom: 1px solid rgba(200,68,106,0.1);
+    border-bottom: 1px solid rgba(123,79,166,0.15);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -592,8 +592,8 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  .cut-item:hover, .addon-item:hover { background: rgba(200,68,106,0.07); }
-  .cut-item.selected { background: rgba(200,68,106,0.12); border-left: 3px solid var(--rose); }
+  .cut-item:hover, .addon-item:hover { background: rgba(123,79,166,0.15); }
+  .cut-item.selected { background: rgba(123,79,166,0.15); border-left: 3px solid var(--rose); }
   .addon-item.selected { background: rgba(201,149,108,0.1); border-left: 3px solid var(--gold); }
   .item-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
   .item-label { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text); font-family: 'Montserrat', sans-serif; }
@@ -602,14 +602,14 @@
   .card-section-title { margin: 10px 0 4px; color: var(--gold); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; padding: 0 2px; }
   .tap-hint { font-size: 11px; color: var(--muted); text-align: center; padding: 6px 0 2px; font-style: italic; }
 
-  #selectionSummary { display: none; margin-top: 8px; padding: 10px 12px; background: var(--blush2); border: 1px solid rgba(200,68,106,0.2); border-radius: 8px; }
+  #selectionSummary { display: none; margin-top: 8px; padding: 10px 12px; background: var(--blush2); border: 1px solid rgba(123,79,166,0.15); border-radius: 8px; }
   #selectionSummaryTitle { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--rose); margin-bottom: 5px; font-style: italic; }
 
   /* ===== FOOTER ===== */
   .footer-banner {
     position: fixed; bottom: 0; left: 0; right: 0;
     background: var(--dark);
-    border-top: 1px solid rgba(200,68,106,0.3);
+    border-top: 1px solid rgba(123,79,166,0.15);
     text-align: center;
     padding: 7px 20px;
     font-family: 'Montserrat', sans-serif;
@@ -629,14 +629,14 @@
     max-width: 420px;
     margin: 0 auto 16px;
     background: linear-gradient(135deg, #fff 0%, var(--blush2) 100%);
-    border: 1px solid rgba(200,68,106,0.2);
+    border: 1px solid rgba(123,79,166,0.15);
     border-left: 4px solid var(--gold);
     border-radius: 10px;
     padding: 12px 16px;
     font-size: 12px;
     line-height: 1.8;
     color: var(--muted);
-    box-shadow: 0 2px 10px rgba(200,68,106,0.06);
+    box-shadow: 0 2px 10px rgba(123,79,166,0.15);
   }
 
   .notice-card strong { color: var(--rose); }
@@ -652,7 +652,7 @@
     <svg viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg" width="22" height="22" aria-hidden="true">
       <path d="M12 1.5 C6.2 1.5 1.8 5.9 1.8 11.6 c0 7.8 9.3 18.1 9.7 18.5 a0.7 0.7 0 0 0 1 0 C12.9 29.7 22.2 19.4 22.2 11.6 C22.2 5.9 17.8 1.5 12 1.5 Z" fill="#F2C4CE" stroke="#1C1016" stroke-width="1.2"/>
       <circle cx="12" cy="11.6" r="4.2" fill="#ffffff" stroke="#1C1016" stroke-width="0.9"/>
-      <circle cx="12" cy="11.6" r="1.6" fill="#C8446A"/>
+      <circle cx="12" cy="11.6" r="1.6" fill="#7B4FA6"/>
     </svg>
   </a>
 </div>
@@ -724,19 +724,19 @@
 
   <div class="info-box" style="max-width:420px; margin:0 auto 18px; padding:16px 18px; font-size:13px; line-height:1.8;">
     <div style="font-weight:700; color:var(--gold); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-bottom:10px;">The House Rules</div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">Working Days</span><span>Monday – Saturday</span></div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">Hours</span><span>8:00 AM – 5:00 PM</span></div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">Sunday</span><span>Closed</span></div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">After 5 PM</span><span>Late Night Fee: $2,500</span></div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">Nail Condition</span><span>Clean &amp; trimmed</span></div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">Guests</span><span>No extra company</span></div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">Nails</span><span>No infections or open wounds</span></div>
-    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(200,68,106,0.15);"><span style="color:var(--muted);">Deposit</span><span style="color:var(--rose); font-weight:700;">$2,000 required</span></div>
-    <div style="margin-top:10px; padding:8px 12px; background:rgba(200,68,106,0.06); border:1px solid rgba(200,68,106,0.2); border-radius:6px;">
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">Working Days</span><span>Monday – Saturday</span></div>
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">Hours</span><span>8:00 AM – 5:00 PM</span></div>
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">Sunday</span><span>Closed</span></div>
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">After 5 PM</span><span>Late Night Fee: $2,500</span></div>
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">Nail Condition</span><span>Clean &amp; trimmed</span></div>
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">Guests</span><span>No extra company</span></div>
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">Nails</span><span>No infections or open wounds</span></div>
+    <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px dotted rgba(123,79,166,0.15);"><span style="color:var(--muted);">Deposit</span><span style="color:var(--rose); font-weight:700;">$2,000 required</span></div>
+    <div style="margin-top:10px; padding:8px 12px; background:rgba(123,79,166,0.15); border:1px solid rgba(123,79,166,0.15); border-radius:6px;">
       <div style="font-weight:700; color:var(--gold); font-size:10px; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;">⌛ Lateness Policy</div>
       <div style="display:flex; justify-content:space-between; padding:3px 0;"><span style="color:var(--muted); font-size:12px;">15 min late</span><span style="color:var(--rose); font-weight:700; font-size:12px;">CANCELLED</span></div>
     </div>
-    <div style="margin-top:10px; padding:8px 12px; background:rgba(200,68,106,0.05); border:1px solid rgba(200,68,106,0.18); border-radius:6px; display:flex; gap:8px; align-items:flex-start;">
+    <div style="margin-top:10px; padding:8px 12px; background:rgba(123,79,166,0.15); border:1px solid rgba(123,79,166,0.15); border-radius:6px; display:flex; gap:8px; align-items:flex-start;">
       <span style="font-size:14px; flex-shrink:0;">🏦</span>
       <div style="font-size:12px; line-height:1.6; color:var(--muted);">Send deposit to <strong style="color:var(--text);">Scotiabank · Anita Mcfarlane · Acc# 1031697</strong> (Savings, JMD). Use your booking reference as the transfer note.</div>
     </div>
@@ -805,7 +805,7 @@
 
     <input type="hidden" id="nailType" value="NONE"/>
 
-    <div id="serviceIncludesCard" style="display:none; margin-bottom:8px; border-radius:10px; overflow:hidden; border:1px solid rgba(200,68,106,0.2); background:#fff;"></div>
+    <div id="serviceIncludesCard" style="display:none; margin-bottom:8px; border-radius:10px; overflow:hidden; border:1px solid rgba(123,79,166,0.15); background:#fff;"></div>
 
     <div id="selectionSummary" style="display:none;">
       <div id="selectionSummaryTitle">✨ Your Selection:</div>
@@ -822,14 +822,14 @@
 <!-- Reviews Section -->
 <div class="content-section" id="reviewsSection">
   <h1 class="page-title">Client Reviews</h1>
-  <div id="reviewPrompt" style="display:none; max-width:500px; margin:20px auto; background:var(--white); color:var(--rose); border:1px solid rgba(200,68,106,0.2); border-radius:10px; padding:15px; text-align:center; font-weight:600; letter-spacing:0.5px; box-shadow:0 2px 12px rgba(200,68,106,0.08);">
+  <div id="reviewPrompt" style="display:none; max-width:500px; margin:20px auto; background:var(--white); color:var(--rose); border:1px solid rgba(123,79,166,0.15); border-radius:10px; padding:15px; text-align:center; font-weight:600; letter-spacing:0.5px; box-shadow:0 2px 12px rgba(123,79,166,0.15);">
     How was your experience? Leave us a review! 💅
   </div>
   <form id="reviewForm" style="max-width:85%; margin:10px auto; text-align:center;">
     <div style="max-width:50%; margin:0 auto;">
-      <input id="reviewName" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border-radius:8px; border:1px solid rgba(200,68,106,0.2); background:var(--blush2); color:var(--text); font-family:'Montserrat',sans-serif;" type="text"/>
+      <input id="reviewName" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border-radius:8px; border:1px solid rgba(123,79,166,0.15); background:var(--blush2); color:var(--text); font-family:'Montserrat',sans-serif;" type="text"/>
     </div>
-    <textarea id="reviewComment" placeholder="Share your experience..." required style="width:90%; height:80px; margin-bottom:10px; padding:10px; border-radius:8px; border:1px solid rgba(200,68,106,0.2); background:var(--blush2); color:var(--text); font-family:'Montserrat',sans-serif; resize:vertical;"></textarea>
+    <textarea id="reviewComment" placeholder="Share your experience..." required style="width:90%; height:80px; margin-bottom:10px; padding:10px; border-radius:8px; border:1px solid rgba(123,79,166,0.15); background:var(--blush2); color:var(--text); font-family:'Montserrat',sans-serif; resize:vertical;"></textarea>
     <div id="starRating" style="font-size:30px; margin-bottom:12px; cursor:pointer; color:#ccc; letter-spacing:3px;">
       <span data-value="1">★</span>
       <span data-value="2">★</span>
@@ -837,7 +837,7 @@
       <span data-value="4">★</span>
       <span data-value="5">★</span>
     </div>
-    <button style="background:linear-gradient(135deg,var(--rose) 0%,var(--rose2) 100%); color:#fff; border:none; padding:12px 28px; border-radius:25px; cursor:pointer; font-weight:700; font-family:'Montserrat',sans-serif; letter-spacing:1.5px; text-transform:uppercase; box-shadow:0 4px 14px rgba(200,68,106,0.3); transition:all 0.2s; font-size:13px;" type="submit">SUBMIT REVIEW</button>
+    <button style="background:linear-gradient(135deg,var(--rose) 0%,var(--rose2) 100%); color:#fff; border:none; padding:12px 28px; border-radius:25px; cursor:pointer; font-weight:700; font-family:'Montserrat',sans-serif; letter-spacing:1.5px; text-transform:uppercase; box-shadow:0 4px 14px rgba(123,79,166,0.15); transition:all 0.2s; font-size:13px;" type="submit">SUBMIT REVIEW</button>
   </form>
   <p id="reviewSubmitMsg" style="text-align:center; color:var(--rose);"></p>
   <div id="reviewsContainer" style="max-width:600px; margin:20px auto; padding:0 15px; padding-bottom:60px;"></div>
@@ -874,23 +874,23 @@
     </div>
 
     <style>
-      .price-style-card { margin-bottom:10px; border-radius:6px; overflow:hidden; border:1px solid rgba(200,68,106,0.12); background:rgba(253,248,245,0.7); }
-      .price-style-head { display:flex; justify-content:space-between; align-items:center; padding:10px 14px; cursor:pointer; user-select:none; background:rgba(200,68,106,0.05); transition:background 0.2s; }
-      .price-style-head:hover { background:rgba(200,68,106,0.1); }
+      .price-style-card { margin-bottom:10px; border-radius:6px; overflow:hidden; border:1px solid rgba(123,79,166,0.15); background:rgba(253,248,245,0.7); }
+      .price-style-head { display:flex; justify-content:space-between; align-items:center; padding:10px 14px; cursor:pointer; user-select:none; background:rgba(123,79,166,0.15); transition:background 0.2s; }
+      .price-style-head:hover { background:rgba(123,79,166,0.15); }
       .price-style-name { font-family:'Playfair Display','Montserrat',serif; font-size:14px; font-weight:600; color:var(--text); letter-spacing:0.5px; }
       .price-style-name small { display:block; font-size:10px; font-weight:400; color:var(--muted); font-style:italic; margin-top:2px; }
       .price-style-from { font-size:12px; color:var(--rose); font-weight:700; white-space:nowrap; font-family:'Montserrat',sans-serif; }
       .price-style-toggle { font-size:14px; color:var(--gold); margin-left:8px; transition:transform 0.25s; }
       .price-style-card.open .price-style-toggle { transform:rotate(180deg); }
-      .price-style-body { display:none; padding:8px 14px 12px; border-top:1px solid rgba(200,68,106,0.1); }
+      .price-style-body { display:none; padding:8px 14px 12px; border-top:1px solid rgba(123,79,166,0.15); }
       .price-style-card.open .price-style-body { display:block; }
       .price-size-title { margin-top:8px; margin-bottom:4px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:var(--gold); }
       .price-size-title:first-child { margin-top:0; }
-      .price-row-inner { display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid rgba(200,68,106,0.06); }
+      .price-row-inner { display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid rgba(123,79,166,0.15); }
       .price-row-inner:last-child { border-bottom:none; }
       .price-row-inner .label { font-size:13px; color:var(--text); }
       .price-row-inner .amt { font-size:13px; color:var(--rose); font-weight:700; white-space:nowrap; }
-      .price-group-divider { margin:14px 0 8px; padding:6px 10px; border-radius:3px; background:rgba(200,68,106,0.08); border-left:3px solid var(--rose); font-family:'Playfair Display',serif; font-style:italic; font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--text); }
+      .price-group-divider { margin:14px 0 8px; padding:6px 10px; border-radius:3px; background:rgba(123,79,166,0.15); border-left:3px solid var(--rose); font-family:'Playfair Display',serif; font-style:italic; font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--text); }
       .price-group-divider:first-child { margin-top:4px; }
     </style>
 
@@ -968,7 +968,7 @@
             html += `</div></div>`;
           });
         });
-        html += `<div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(200,68,106,0.1);"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);margin-bottom:6px;">Optional Extra</div><div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:13px;color:var(--text);">Nail Gems / Charms / Foil</span><span style="font-size:13px;color:var(--rose);font-weight:700;white-space:nowrap;">$500+</span></div></div>`;
+        html += `<div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(123,79,166,0.15);"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);margin-bottom:6px;">Optional Extra</div><div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:13px;color:var(--text);">Nail Gems / Charms / Foil</span><span style="font-size:13px;color:var(--rose);font-weight:700;white-space:nowrap;">$500+</span></div></div>`;
         container.innerHTML = html;
       })();
     </script>
@@ -978,7 +978,7 @@
 
 <!-- Admin Login Modal -->
 <div id="adminLoginModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background-color:rgba(28,16,22,0.7); justify-content:center; align-items:center; z-index:10000; backdrop-filter:blur(4px);">
-  <div style="background:white; padding:30px 24px; border-radius:16px; text-align:center; max-width:320px; width:90%; box-shadow:0 12px 50px rgba(200,68,106,0.2); position:relative; border-top:4px solid var(--rose);">
+  <div style="background:white; padding:30px 24px; border-radius:16px; text-align:center; max-width:320px; width:90%; box-shadow:0 12px 50px rgba(123,79,166,0.15); position:relative; border-top:4px solid var(--rose);">
     <span onclick="closeAdminModal()" style="position:absolute; top:12px; right:16px; font-size:22px; cursor:pointer; color:#aaa; line-height:1;">×</span>
     <div style="font-size:36px; margin-bottom:8px;">🌸</div>
     <h3 style="margin:0 0 6px; color:var(--text); font-family:'Playfair Display',serif; font-style:italic; font-size:22px;">Admin Access</h3>
@@ -994,7 +994,7 @@
 
 <!-- Booking Confirmation Modal -->
 <div id="bookingModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background-color:rgba(28,16,22,0.6); justify-content:center; align-items:center; z-index:10000; backdrop-filter:blur(4px);">
-  <div style="padding:20px; border-radius:16px; max-width:450px; width:90%; max-height:80vh; overflow-y:auto; box-shadow:0 12px 50px rgba(200,68,106,0.2); position:relative;">
+  <div style="padding:20px; border-radius:16px; max-width:450px; width:90%; max-height:80vh; overflow-y:auto; box-shadow:0 12px 50px rgba(123,79,166,0.15); position:relative;">
     <h3 id="bookingModalTitle" style="display:none;"></h3>
     <p id="bookingModalContent"></p>
   </div>
@@ -1014,7 +1014,7 @@
   <div id="paymentInfoBox">
     <button onclick="closePaymentInfo()" style="position:sticky; top:0; right:0; float:right; background:#fff; border:none; font-size:24px; cursor:pointer; z-index:10001; color:#ccc;">✖</button>
     <h3 style="margin:10px 0 18px; color:var(--rose); text-align:center; font-family:'Playfair Display',serif; font-style:italic; font-size:20px;">Payment Info</h3>
-    <div style="border:1px solid rgba(200,68,106,0.15); border-radius:10px; padding:14px; background:var(--blush2); border-left:4px solid var(--rose); color:var(--text);">
+    <div style="border:1px solid rgba(123,79,166,0.15); border-radius:10px; padding:14px; background:var(--blush2); border-left:4px solid var(--rose); color:var(--text);">
       <p style="margin:6px 0; font-size:14px; text-align:center; font-style:italic; font-family:'Montserrat',sans-serif;">Payment details coming soon. 🌸</p>
     </div>
   </div>
@@ -1292,9 +1292,9 @@
       const h = Math.floor(dur/60), m = dur%60;
       const durLabel = h > 0 ? (m > 0 ? `${h}h ${m}m` : `${h}h`) : `${m}m`;
       const totalStr = total > 0
-        ? `<div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(200,68,106,0.2);font-weight:700;font-size:13px;color:var(--rose);">💰 Estimated Total: $${total.toLocaleString()} &nbsp;·&nbsp; ⏱ ${durLabel}</div>`
+        ? `<div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(123,79,166,0.15);font-weight:700;font-size:13px;color:var(--rose);">💰 Estimated Total: $${total.toLocaleString()} &nbsp;·&nbsp; ⏱ ${durLabel}</div>`
         : `<div style="margin-top:6px;font-size:12px;color:var(--gold);font-style:italic;">⏱ Est. ${durLabel}</div>`;
-      summaryText.innerHTML = parts.map(p => `<span style="display:inline-block;background:rgba(200,68,106,0.1);border:1px solid rgba(200,68,106,0.25);border-radius:20px;padding:3px 10px;margin:3px 3px 3px 0;font-size:12px;color:var(--rose);font-weight:600;">${p}</span>`).join('') + totalStr;
+      summaryText.innerHTML = parts.map(p => `<span style="display:inline-block;background:rgba(123,79,166,0.15);border:1px solid rgba(123,79,166,0.15);border-radius:20px;padding:3px 10px;margin:3px 3px 3px 0;font-size:12px;color:var(--rose);font-weight:600;">${p}</span>`).join('') + totalStr;
     }
   }
 
@@ -1308,9 +1308,9 @@
   (function injectCardStyles() {
     const s = document.createElement('style');
     s.textContent = `
-      .cut-item, .addon-item { padding:9px 12px; border-bottom:1px solid rgba(200,68,106,0.1); display:flex; justify-content:space-between; align-items:center; cursor:pointer; border-radius:6px; transition:background 0.15s; user-select:none; -webkit-tap-highlight-color:transparent; }
-      .cut-item:hover, .addon-item:hover { background:rgba(200,68,106,0.07); }
-      .cut-item.selected { background:rgba(200,68,106,0.12); border-left:3px solid var(--rose); }
+      .cut-item, .addon-item { padding:9px 12px; border-bottom:1px solid rgba(123,79,166,0.15); display:flex; justify-content:space-between; align-items:center; cursor:pointer; border-radius:6px; transition:background 0.15s; user-select:none; -webkit-tap-highlight-color:transparent; }
+      .cut-item:hover, .addon-item:hover { background:rgba(123,79,166,0.15); }
+      .cut-item.selected { background:rgba(123,79,166,0.15); border-left:3px solid var(--rose); }
       .addon-item.selected { background:rgba(201,149,108,0.1); border-left:3px solid var(--gold); }
       .item-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; display:inline-block; }
       .item-label { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text); font-family:'Montserrat',sans-serif; }
@@ -1598,14 +1598,14 @@
         document.getElementById("selectedTime").innerHTML = "<option value=''>Pick date & service first</option>";
         document.querySelector("#bookingModal h3").style.display = "none";
         document.querySelector("#bookingModal p").innerHTML = `
-          <div style="text-align:center; padding:24px; font-family:'Montserrat',sans-serif; color:var(--text); max-width:420px; margin:0 auto; background:white; border-radius:16px; box-shadow:0 12px 50px rgba(200,68,106,0.15); border-top:4px solid var(--rose);">
+          <div style="text-align:center; padding:24px; font-family:'Montserrat',sans-serif; color:var(--text); max-width:420px; margin:0 auto; background:white; border-radius:16px; box-shadow:0 12px 50px rgba(123,79,166,0.15); border-top:4px solid var(--rose);">
             <div style="width:70px; height:70px; border-radius:50%; background:linear-gradient(135deg,var(--rose),var(--rose2)); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-size:32px;">✨</div>
             <h2 style="margin:0 0 12px; font-size:20px; font-weight:700; font-family:'Playfair Display',serif; font-style:italic; color:var(--rose);">Booking Confirmed!</h2>
             <p style="font-size:15px; margin:0 0 6px; font-weight:600;">Booking #: ${bookingNumber}</p>
             <p style="font-size:13px; margin:0 0 6px; color:var(--muted);">📅 ${formattedDate} &nbsp;|&nbsp; ⏰ ${time}</p>
             <p style="font-size:13px; margin:0 0 12px; color:var(--muted); text-align:left; line-height:1.6;">✨ ${services}</p>
-            ${total > 0 ? `<div style="background:var(--blush2);border:1px solid rgba(200,68,106,0.2);border-radius:10px;padding:10px 16px;margin-bottom:14px;font-weight:700;font-size:16px;color:var(--rose);">💰 Total: $${total.toLocaleString()}</div>` : ''}
-            <hr style="margin:16px 0; border:0; height:1px; background:rgba(200,68,106,0.1);">
+            ${total > 0 ? `<div style="background:var(--blush2);border:1px solid rgba(123,79,166,0.15);border-radius:10px;padding:10px 16px;margin-bottom:14px;font-weight:700;font-size:16px;color:var(--rose);">💰 Total: $${total.toLocaleString()}</div>` : ''}
+            <hr style="margin:16px 0; border:0; height:1px; background:rgba(123,79,166,0.15);">
             <p style="font-size:14px; margin:10px 0; color:var(--text);">Thank you for booking with ATM Beauty Styles! We can't wait to make your nails beautiful. 💅</p>
             <div style="background:#fff3f3;border:2px solid var(--rose);border-radius:6px;padding:12px;margin:10px 0;text-align:left;">
               <div style="font-weight:700;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose2);margin-bottom:5px;">⚠️ Deposit Required</div>
@@ -1634,7 +1634,7 @@
     star.addEventListener('click', () => {
       selectedRating = parseInt(star.getAttribute('data-value'));
       document.querySelectorAll('#starRating span').forEach(s => {
-        s.style.color = parseInt(s.getAttribute('data-value')) <= selectedRating ? '#C8446A' : '#ccc';
+        s.style.color = parseInt(s.getAttribute('data-value')) <= selectedRating ? '#7B4FA6' : '#ccc';
       });
     });
   });
@@ -1682,9 +1682,9 @@
         const isOwner = user && d.uid === user.uid;
         const dateString = formatReviewTime(d.timestamp);
         let stars = '';
-        for (let i = 1; i <= 5; i++) stars += `<span style="color:${i <= d.rating ? '#C8446A' : '#ddd'};">★</span>`;
+        for (let i = 1; i <= 5; i++) stars += `<span style="color:${i <= d.rating ? '#7B4FA6' : '#ddd'};">★</span>`;
         container.innerHTML += `
-          <div style="background:#fff; border:1px solid rgba(200,68,106,0.1); padding:16px; margin-bottom:12px; border-radius:12px; box-shadow:0 2px 10px rgba(200,68,106,0.07); border-left:4px solid var(--rose);">
+          <div style="background:#fff; border:1px solid rgba(123,79,166,0.15); padding:16px; margin-bottom:12px; border-radius:12px; box-shadow:0 2px 10px rgba(123,79,166,0.15); border-left:4px solid var(--rose);">
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <strong style="font-size:15px; color:var(--text); font-family:'Montserrat',sans-serif;">${d.name}</strong>
               <small style="color:#bbb; font-style:italic; font-size:12px;">${dateString}</small>
@@ -1738,7 +1738,7 @@
           const depositStatus = b.deposit === "Made" || b.deposit === "Yes";
           const isCancelled = b.status === 'Cancelled';
           bookingsHTML += `
-            <div style="border:1px solid rgba(200,68,106,0.15); border-radius:12px; padding:16px; margin-bottom:14px; background:${isCancelled ? '#fff5f7' : '#fff'}; box-shadow:0 2px 10px rgba(200,68,106,0.07); border-left:4px solid ${isCancelled ? 'var(--rose)' : 'var(--gold)'}; color:var(--text);">
+            <div style="border:1px solid rgba(123,79,166,0.15); border-radius:12px; padding:16px; margin-bottom:14px; background:${isCancelled ? '#fff5f7' : '#fff'}; box-shadow:0 2px 10px rgba(123,79,166,0.15); border-left:4px solid ${isCancelled ? 'var(--rose)' : 'var(--gold)'}; color:var(--text);">
               <h3 style="margin-top:0; color:var(--rose); font-size:16px; font-family:'Playfair Display',serif; font-style:italic;">Booking #: ${b.bookingNumber || "N/A"}</h3>
               <p style="margin:4px 0; font-size:13px;"><strong>👤</strong> ${b.name || "N/A"}</p>
               <p style="margin:4px 0; font-size:13px;"><strong>📞</strong> ${b.phone || "N/A"}</p>
@@ -1773,7 +1773,7 @@
       html: `<p style="font-family:'Montserrat',sans-serif; color:#555; font-size:14px;">Are you sure you want to cancel <strong>Booking #${bookingNumber}</strong>?<br><br>This cannot be undone.</p>`,
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonColor: '#C8446A',
+      confirmButtonColor: '#7B4FA6',
       cancelButtonColor: '#888',
       confirmButtonText: 'Yes, Cancel It',
       cancelButtonText: 'Keep Booking',
@@ -1784,7 +1784,7 @@
         if (!doc.exists) { Swal.fire('Not Found', 'Booking could not be found.', 'error'); return; }
         if (doc.data().uid !== user.uid) { Swal.fire('Denied', 'You can only cancel your own bookings.', 'error'); return; }
         db.collection('bookings').doc(bookingId).update({ status: 'Cancelled', cancelledBy: 'client' })
-          .then(() => { Swal.fire({ title: 'Booking Cancelled', text: 'Booking #' + bookingNumber + ' has been cancelled.', icon: 'success', confirmButtonColor: '#C8446A' }); })
+          .then(() => { Swal.fire({ title: 'Booking Cancelled', text: 'Booking #' + bookingNumber + ' has been cancelled.', icon: 'success', confirmButtonColor: '#7B4FA6' }); })
           .catch(err => Swal.fire('Error', 'Failed to cancel booking: ' + err.message, 'error'));
       }).catch(err => Swal.fire('Error', err.message, 'error'));
     });
